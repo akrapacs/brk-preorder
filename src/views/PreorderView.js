@@ -14,7 +14,7 @@ const _tagFilter = (tag) => {
 export default class RootView extends React.Component {
     constructor(props) {
         super(props);
-        
+
         this.state = {
             selected: 'all',
             maxImageWidth: 400,
@@ -63,7 +63,7 @@ export default class RootView extends React.Component {
         };
 
         return (
-            <div className="toolbar">/
+            <div className="toolbar">
                 <div className="toolbar-group">
                     <ButtonGroup>
                         { button('all', 'All') }
