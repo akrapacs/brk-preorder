@@ -190,7 +190,7 @@ export const Media = [
     },
     {
         name: 'Black Carbon Fiber',
-        tags: ['synthetics', 'micarta'],
+        tags: ['synthetics'],
         images: [
             'carbon-fiber-black-2.jpg',
             'carbon-fiber-black-1.jpg',
@@ -234,42 +234,42 @@ export const Media = [
     },
     {
         name: 'Amber Sea Dragon Scale',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'dragonscale'],
         images: [
             'dragon-scale-amber-sea-1.jpg',
         ]
     },
     {
         name: 'Arctic Dragon Scale',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'dragonscale'],
         images: [
             'dragon-scale-arctic-1.jpg',
         ]
     },
     {
         name: 'Borealis Dragon Scale',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'dragonscale'],
         images: [
             'dragon-scale-borealis-1.jpg',
         ]
     },
     {
         name: 'Mystic Dragon Scale',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'dragonscale'],
         images: [
             'dragon-scale-mystic-1.jpg',
         ]
     },
     {
         name: 'Ruby Frost Dragon Scale',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'dragonscale'],
         images: [
             'dragon-scale-ruby-frost-1.jpg',
         ]
     },
     {
         name: 'Sunfire Dragon Scale',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'dragonscale'],
         images: [
             'dragon-scale-sunfire-1.jpg',
         ]
@@ -436,35 +436,35 @@ export const Media = [
     },
     {
         name: 'Blue and Black Lizard Skin',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'lizardskin'],
         images: [
             'lizardskin-blue-and-black-1.jpg',
         ]
     },
     {
         name: 'Blue and White Lizard Skin',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'lizardskin'],
         images: [
             'lizardskin-blue-and-white-1.jpg',
         ]
     },
     {
         name: 'Green and Black Lizard Skin',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'lizardskin'],
         images: [
             'lizardskin-green-and-black-1.jpg',
         ]
     },
     {
         name: 'Orange and Black Lizard Skin',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'lizardskin'],
         images: [
             'lizardskin-orange-and-black-1.jpg',
         ]
     },
     {
         name: 'Red and Black Lizard Skin',
-        tags: ['synthetics'],
+        tags: ['synthetics', 'lizardskin'],
         images: [
             'lizardskin-red-and-black-1.jpg',
         ]

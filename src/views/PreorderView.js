@@ -18,7 +18,8 @@ export default class RootView extends React.Component {
         super(props);
 
         this.state = {
-            selected: 'all',
+            selectedPrimary: 'all',
+            selectedSecondary: 'all',
             maxImageWidth: 400,
             all: Media,
             g10: Media.filter(_tagFilter('g10')),
@@ -26,6 +27,9 @@ export default class RootView extends React.Component {
             synthetics: Media.filter(_tagFilter('synthetics')),
             micarta: Media.filter(_tagFilter('micarta')),
             wood: Media.filter(_tagFilter('wood')),
+            pinecone: Media.filter(_tagFilter('pinecone')),
+            dragonscale: Media.filter(_tagFilter('dragonscale')),
+            lizardskin: Media.filter(_tagFilter('lizardskin')),
         };
     }
 
@@ -50,14 +54,26 @@ export default class RootView extends React.Component {
 
     renderToolbar() {
         const {
-            selected,
+            selectedPrimary,
+            selectedSecondary,
         } = this.state;
 
-        const button = (type, text) => {
+        const primaryButton = (type, text) => {
             return (
                 <Button
-                    variant={selected === type ? 'primary' : 'secondary'}
-                    onClick={() => this.setState({ selected: type })}
+                    variant={selectedPrimary === type ? 'primary' : 'secondary'}
+                    onClick={() => this.setState({ selectedPrimary: type })}
+                >
+                { text }
+                </Button>
+            );
+        };
+
+        const secondaryButton = (type, text) => {
+            return (
+                <Button
+                    variant={selectedSecondary === type ? 'primary' : 'secondary'}
+                    onClick={() => this.setState({ selectedSecondary: type })}
                 >
                 { text }
                 </Button>
@@ -67,26 +83,41 @@ export default class RootView extends React.Component {
         return (
             <div className="toolbar">
                 <ButtonGroup>
-                    { button('all', 'All') }
-                    { button('g10', 'G-10') }
-                    { button('micarta', 'Micarta') }
-                    { button('wood', 'Wood') }
-                    { button('naturals', 'Naturals') }
-                    { button('synthetics', 'Synthetics') }
+                    { primaryButton('all', 'All') }
+                    { primaryButton('wood', 'Wood') }
+                    { primaryButton('naturals', 'Naturals') }
+                    { primaryButton('synthetics', 'Synthetics') }
                 </ButtonGroup>
+
+                { selectedPrimary === 'synthetics' && (
+                    <ButtonGroup>
+                        { secondaryButton('all', 'All') }
+                        { secondaryButton('g10', 'G-10') }
+                        { secondaryButton('micarta', 'Micarta') }
+                        { secondaryButton('dragonscale', 'Dragon Scale') }
+                        { secondaryButton('lizardskin', 'Lizard Skin') }
+                    </ButtonGroup>
+                )}
+
+                { selectedPrimary === 'naturals' && (
+                    <ButtonGroup>
+                        { secondaryButton('all', 'All') }
+                        { secondaryButton('pinecone', 'Pinecone') }
+                    </ButtonGroup>
+                )}
 
                 <div className="toolbar-group">
                     <Button
                         variant="primary"
                         onClick={() => this.zoom(true)}
                     >
-                        Zoom In
+                        +
                     </Button>
                     <Button
                         variant="primary"
                         onClick={() => this.zoom(false)}
                     >
-                        Zoom Out
+                        -
                     </Button>
                 </div>
             </div>
@@ -117,10 +148,28 @@ export default class RootView extends React.Component {
 
     renderMedia() {
         const {
-            selected,
+            selectedPrimary,
+            selectedSecondary,
         } = this.state;
 
-        const media = this.state[selected];
+        let media = null;
+
+        switch (selectedPrimary) {
+            case 'all':
+            case 'wood':
+                media = this.state[selectedPrimary];
+                break;
+            case 'naturals':
+            case 'synthetics':
+                if (selectedSecondary === 'all') {
+                    media = this.state[selectedPrimary];
+                } else {
+                    media = this.state[selectedSecondary];
+                }
+                break;
+            default:
+                break;
+        }
 
         return (
             <div className="media">
