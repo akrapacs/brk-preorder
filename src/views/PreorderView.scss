@@ -1,17 +1,21 @@
 .preorder-view {
+    margin: 10px;
+
     & > .toolbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
         & > .toolbar-group {
+            & > .btn {
+                margin-right: 4px;
+            }
         }
     }
 
     & > .media {
         display: flex;
         flex-direction: column;
-        margin: 10px;
 
         & > .media-row {
             display: flex;

@@ -66,16 +66,14 @@ export default class RootView extends React.Component {
 
         return (
             <div className="toolbar">
-                <div className="toolbar-group">
-                    <ButtonGroup>
-                        { button('all', 'All') }
-                        { button('g10', 'G-10') }
-                        { button('micarta', 'Micarta') }
-                        { button('wood', 'Wood') }
-                        { button('naturals', 'Naturals') }
-                        { button('synthetics', 'Synthetics') }
-                    </ButtonGroup>
-                </div>
+                <ButtonGroup>
+                    { button('all', 'All') }
+                    { button('g10', 'G-10') }
+                    { button('micarta', 'Micarta') }
+                    { button('wood', 'Wood') }
+                    { button('naturals', 'Naturals') }
+                    { button('synthetics', 'Synthetics') }
+                </ButtonGroup>
 
                 <div className="toolbar-group">
                     <Button
