@@ -144,7 +144,7 @@ export default class RootView extends React.Component {
 
     render() {
         return (
-            <div className="view preorder">
+            <div className="view preorder-view">
                 { this.renderToolbar() }
                 { this.renderMedia() }
             </div>

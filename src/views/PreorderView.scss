@@ -1,5 +1,4 @@
-.preorder {
-
+.preorder-view {
     & > .toolbar {
         display: flex;
         flex-direction: row;
@@ -7,7 +6,6 @@
 
         & > .toolbar-group {
         }
-
     }
 
     & > .media {
@@ -30,16 +28,9 @@
                 flex-wrap: wrap;
 
                 & > .image-container {
-                    // max-width: 200px;
                     padding: 8px;
                 }
             }
-
-
-            // & > .gallery img {
-            //     max-height: 200px;
-            //     padding: 8px;
-            // }
         }
     }
 }
