@@ -3,9 +3,9 @@
     & > .toolbar {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
         & > .toolbar-group {
-            padding-right: 32px;
         }
 
     }
