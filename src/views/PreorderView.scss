@@ -1,0 +1,45 @@
+.preorder {
+
+    & > .toolbar {
+        display: flex;
+        flex-direction: row;
+
+        & > .toolbar-group {
+            padding-right: 32px;
+        }
+
+    }
+
+    & > .media {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+
+        & > .media-row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            & > .title {
+                width: 100px;
+            }
+
+            & > .gallery {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                & > .image-container {
+                    // max-width: 200px;
+                    padding: 8px;
+                }
+            }
+
+
+            // & > .gallery img {
+            //     max-height: 200px;
+            //     padding: 8px;
+            // }
+        }
+    }
+}
