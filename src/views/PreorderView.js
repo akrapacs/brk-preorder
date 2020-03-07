@@ -5,6 +5,8 @@ import ModalImage from 'react-modal-image';
 
 import './PreorderView.scss';
 
+const imagePath = process.env.PUBLIC_URL + '/assets/images';
+
 const _tagFilter = (tag) => {
     return (item) => {
         return item.tags.some((item) => { return item === tag; });
@@ -98,15 +100,15 @@ export default class RootView extends React.Component {
             maxImageWidth,
         } = this.state;
 
-        const styles = { 'max-width': maxImageWidth };
+        const styles = { maxWidth: maxImageWidth };
 
-        return images.map((image) => {
+        return images.map((image, idx) => {
             return (
-                <div className="image-container" style={styles}>
+                <div key={`image-${idx}`} className="image-container" style={styles}>
                     <ModalImage
                         alt={image.name}
-                        small={`images/${image}`}
-                        large={`images/${image}`}
+                        small={`${imagePath}/${image}`}
+                        large={`${imagePath}/${image}`}
                         hideDownload={true}
                         hideZoom={true}
                     />
@@ -125,9 +127,9 @@ export default class RootView extends React.Component {
         return (
             <div className="media">
                 {
-                    media.map((item) => {
+                    media.map((item, idx) => {
                         return (
-                            <div className="media-row">
+                            <div key={`row-${idx}`} className="media-row">
                                 <div className="title">
                                     { item.name }
                                 </div>
