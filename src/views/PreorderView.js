@@ -5,6 +5,8 @@ import ModalImage from 'react-modal-image';
 
 import './PreorderView.scss';
 
+const imageWidthMinimum = 200;
+const imageWidthMaximum = 400;
 const imagePath = process.env.PUBLIC_URL + '/assets/images';
 
 const _tagFilter = (tag) => {
@@ -20,7 +22,7 @@ export default class RootView extends React.Component {
         this.state = {
             selectedPrimary: 'all',
             selectedSecondary: 'all',
-            maxImageWidth: 400,
+            maxImageWidth: imageWidthMaximum,
             all: Media,
             g10: Media.filter(_tagFilter('g10')),
             naturals: Media.filter(_tagFilter('naturals')),
@@ -44,9 +46,6 @@ export default class RootView extends React.Component {
             newValue = maxImageWidth + 50;
         } else {
             newValue = maxImageWidth - 50;
-            if (newValue < 200) {
-                newValue = 200;
-            }
         }
 
         this.setState({ maxImageWidth: newValue });
@@ -54,6 +53,7 @@ export default class RootView extends React.Component {
 
     renderToolbar() {
         const {
+            maxImageWidth,
             selectedPrimary,
             selectedSecondary,
         } = this.state;
@@ -105,22 +105,23 @@ export default class RootView extends React.Component {
                         { secondaryButton('pinecone', 'Pinecone') }
                     </ButtonGroup>
                 )}
-                {/*
-                <div className="toolbar-group">
+
+                <ButtonGroup>
                     <Button
-                        variant="primary"
+                        variant="link"
                         onClick={() => this.zoom(true)}
+                        disabled={maxImageWidth >= imageWidthMaximum}
                     >
-                        +
+                        Zoom +
                     </Button>
                     <Button
-                        variant="primary"
+                        variant="link"
                         onClick={() => this.zoom(false)}
+                        disabled={maxImageWidth <= imageWidthMinimum}
                     >
-                        -
+                        Zoom -
                     </Button>
-                </div>
-                */}
+                </ButtonGroup>
             </div>
         );
     }
