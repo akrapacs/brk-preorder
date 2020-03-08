@@ -136,8 +136,8 @@ export default class RootView extends React.Component {
                 <div key={`image-${idx}`} className="image-container" style={styles}>
                     <ModalImage
                         alt={image.name}
-                        small={`${imagePath}/${image}`}
-                        large={`${imagePath}/${image}`}
+                        small={`${imagePath}/${image.small}`}
+                        large={`${imagePath}/${image.large}`}
                         hideDownload={true}
                         hideZoom={true}
                     />
