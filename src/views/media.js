@@ -4,6 +4,7 @@ export const Media = [
         tags: ['naturals'],
         images: [
             'antique-stag-bone-1.jpg',
+            'antique-stag-bone-2.jpg',
         ]
     },
     {
@@ -19,6 +20,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-coffeebag-1.jpg',
+            'burlap-micarta-coffeebag-2.jpg',
         ]
     },
     {
@@ -26,6 +28,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-drunken-coffeebag-1.jpg',
+            'burlap-micarta-drunken-coffeebag-2.jpg',
         ]
     },
     {
@@ -33,6 +36,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-evergreen-1.jpg',
+            'burlap-micarta-evergreen-2.jpg',
         ]
     },
     {
@@ -40,6 +44,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-forest-1.jpg',
+            'burlap-micarta-forest-2.jpg',
         ]
     },
     {
@@ -47,6 +52,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-lime-1.jpg',
+            'burlap-micarta-lime-2.jpg',
         ]
     },
     {
@@ -62,6 +68,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-navy-1.jpg',
+            'burlap-micarta-navy-2.jpg',
         ]
     },
     {
@@ -86,6 +93,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-royal-and-gold-1.jpg',
+            'burlap-micarta-royal-and-gold-2.jpg',
         ]
     },
     {
@@ -93,6 +101,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-sandstone-1.jpg',
+            'burlap-micarta-sandstone-2.jpg',
         ]
     },
     {
@@ -100,6 +109,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-smoke-1.jpg',
+            'burlap-micarta-smoke-2.jpg',
         ]
     },
     {
@@ -107,6 +117,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-tan-1.jpg',
+            'burlap-micarta-tan-2.jpg',
         ]
     },
     {
@@ -114,6 +125,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-terracotta-1.jpg',
+            'burlap-micarta-terracotta-2.jpg',
         ]
     },
     {
@@ -121,6 +133,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-toxic-1.jpg',
+            'burlap-micarta-toxic-2.jpg',
         ]
     },
     {
@@ -128,6 +141,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-turquoise-1.jpg',
+            'burlap-micarta-turquoise-2.jpg',
         ]
     },
     {
@@ -135,6 +149,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'burlap-micarta-vintage-bone-1.jpg',
+            'burlap-micarta-vintage-bone-2.jpg',
         ]
     },
     {
@@ -165,6 +180,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'canvas-micarta-firedog-1.jpg',
+            'canvas-micarta-firedog-2.jpg',
         ]
     },
     {
@@ -208,7 +224,7 @@ export const Media = [
         name: 'Red C-Tek',
         tags: ['synthetics'],
         images: [
-            'ctek-red-1.jpeg',
+            'ctek-red-1.jpg',
         ]
     },
     {
@@ -237,6 +253,7 @@ export const Media = [
         tags: ['synthetics', 'dragonscale'],
         images: [
             'dragon-scale-amber-sea-1.jpg',
+            'dragon-scale-amber-sea-2.jpg',
         ]
     },
     {
@@ -244,6 +261,7 @@ export const Media = [
         tags: ['synthetics', 'dragonscale'],
         images: [
             'dragon-scale-arctic-1.jpg',
+            'dragon-scale-arctic-2.jpg',
         ]
     },
     {
@@ -279,6 +297,7 @@ export const Media = [
         tags: ['synthetics', 'g10'],
         images: [
             'g10-black-1.jpg',
+            'g10-black-2.jpg',
         ]
     },
     {
@@ -286,6 +305,7 @@ export const Media = [
         tags: ['synthetics', 'g10'],
         images: [
             'g10-blaze-orange-1.jpg',
+            'g10-blaze-orange-2.jpg',
         ]
     },
     {
@@ -293,6 +313,7 @@ export const Media = [
         tags: ['synthetics', 'g10'],
         images: [
             'g10-blue-and-black-1.jpg',
+            'g10-blue-and-black-2.jpg',
         ]
     },
     {
@@ -386,6 +407,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'linen-micarta-antique-bone-1.jpg',
+            'linen-micarta-antique-bone-2.jpg',
         ]
     },
     {
@@ -401,6 +423,7 @@ export const Media = [
         tags: ['synthetics', 'micarta'],
         images: [
             'linen-micarta-black-and-green-1.jpg',
+            'linen-micarta-black-and-green-2.jpg',
         ]
     },
     {
@@ -488,6 +511,7 @@ export const Media = [
         tags: ['naturals', 'pinecone'],
         images: [
             'pinecone-black-1.jpg',
+            'pinecone-black-2.jpg',
         ]
     },
     {
@@ -495,6 +519,7 @@ export const Media = [
         tags: ['naturals', 'pinecone'],
         images: [
             'pinecone-black-and-white-1.jpg',
+            'pinecone-black-and-white-2.jpg',
         ]
     },
     {
