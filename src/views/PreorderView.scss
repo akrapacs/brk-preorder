@@ -6,10 +6,8 @@
         flex-direction: row;
         justify-content: space-between;
 
-        & .toolbar-group {
-            & > .btn {
-                margin-right: 4px;
-            }
+        & > .btn-group {
+              margin: 4px;
         }
     }
 
@@ -37,5 +35,14 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .preorder-view {
+      & > .toolbar {
+          justify-content: center;
+          flex-wrap: wrap;
+      }
     }
 }
