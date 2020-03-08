@@ -105,7 +105,7 @@ export default class RootView extends React.Component {
                         { secondaryButton('pinecone', 'Pinecone') }
                     </ButtonGroup>
                 )}
-
+                {/*
                 <div className="toolbar-group">
                     <Button
                         variant="primary"
@@ -120,6 +120,7 @@ export default class RootView extends React.Component {
                         -
                     </Button>
                 </div>
+                */}
             </div>
         );
     }
