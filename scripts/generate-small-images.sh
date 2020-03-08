@@ -1,4 +1,4 @@
-BASE="../public/assets/images"
+BASE="./public/assets/images"
 FILES="$BASE/*.jpg"
 
 for f in $FILES

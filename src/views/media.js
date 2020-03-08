@@ -75,7 +75,7 @@ export const Media = [
         name: 'Orange Fire Burlap Micarta',
         tags: ['synthetics', 'micarta'],
         images: [
-            { large: 'burlap-micarta-orange-fire-1.jpg', small: 'urlap-micarta-orange-fire-1-small.webp' },
+            { large: 'burlap-micarta-orange-fire-1.jpg', small: 'burlap-micarta-orange-fire-1-small.webp' },
             { large: 'burlap-micarta-orange-fire-2.jpg', small: 'burlap-micarta-orange-fire-2-small.webp' },
             { large: 'burlap-micarta-orange-fire-3.jpg', small: 'burlap-micarta-orange-fire-3-small.webp' },
         ]
@@ -404,7 +404,7 @@ export const Media = [
         name: 'Tigerstripe G-10',
         tags: ['synthetics', 'g10'],
         images: [
-            { large: 'g10-tigerstripe-1.jpg', small: '10-tigerstripe-1-small.webp' },
+            { large: 'g10-tigerstripe-1.jpg', small: 'g10-tigerstripe-1-small.webp' },
             { large: 'g10-tigerstripe-2.jpg', small: 'g10-tigerstripe-2-small.webp' },
             { large: 'g10-tigerstripe-3.jpg', small: 'g10-tigerstripe-3-small.webp' },
         ]
