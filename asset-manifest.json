@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/brk-preorder/static/css/main.3d3c28e6.chunk.css",
-    "main.js": "/brk-preorder/static/js/main.4724be2e.chunk.js",
-    "main.js.map": "/brk-preorder/static/js/main.4724be2e.chunk.js.map",
-    "runtime-main.js": "/brk-preorder/static/js/runtime-main.7b1257b7.js",
-    "runtime-main.js.map": "/brk-preorder/static/js/runtime-main.7b1257b7.js.map",
-    "static/css/2.47e06e2e.chunk.css": "/brk-preorder/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.1c3cc4b2.chunk.js": "/brk-preorder/static/js/2.1c3cc4b2.chunk.js",
-    "static/js/2.1c3cc4b2.chunk.js.map": "/brk-preorder/static/js/2.1c3cc4b2.chunk.js.map",
+    "main.js": "/brk-preorder/static/js/main.e2778d55.chunk.js",
+    "main.js.map": "/brk-preorder/static/js/main.e2778d55.chunk.js.map",
+    "runtime-main.js": "/brk-preorder/static/js/runtime-main.4c20765f.js",
+    "runtime-main.js.map": "/brk-preorder/static/js/runtime-main.4c20765f.js.map",
+    "static/css/2.de424728.chunk.css": "/brk-preorder/static/css/2.de424728.chunk.css",
+    "static/js/2.9ae7867e.chunk.js": "/brk-preorder/static/js/2.9ae7867e.chunk.js",
+    "static/js/2.9ae7867e.chunk.js.map": "/brk-preorder/static/js/2.9ae7867e.chunk.js.map",
     "index.html": "/brk-preorder/index.html",
-    "precache-manifest.57c8be3db19d9636a7685e39cd62f539.js": "/brk-preorder/precache-manifest.57c8be3db19d9636a7685e39cd62f539.js",
+    "precache-manifest.2c4f65da15010abfcbff66c49bc3993e.js": "/brk-preorder/precache-manifest.2c4f65da15010abfcbff66c49bc3993e.js",
     "service-worker.js": "/brk-preorder/service-worker.js",
-    "static/css/2.47e06e2e.chunk.css.map": "/brk-preorder/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/2.de424728.chunk.css.map": "/brk-preorder/static/css/2.de424728.chunk.css.map",
     "static/css/main.3d3c28e6.chunk.css.map": "/brk-preorder/static/css/main.3d3c28e6.chunk.css.map",
-    "static/js/2.1c3cc4b2.chunk.js.LICENSE.txt": "/brk-preorder/static/js/2.1c3cc4b2.chunk.js.LICENSE.txt"
+    "static/js/2.9ae7867e.chunk.js.LICENSE.txt": "/brk-preorder/static/js/2.9ae7867e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7b1257b7.js",
-    "static/css/2.47e06e2e.chunk.css",
-    "static/js/2.1c3cc4b2.chunk.js",
+    "static/js/runtime-main.4c20765f.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.9ae7867e.chunk.js",
     "static/css/main.3d3c28e6.chunk.css",
-    "static/js/main.4724be2e.chunk.js"
+    "static/js/main.e2778d55.chunk.js"
   ]
 }
