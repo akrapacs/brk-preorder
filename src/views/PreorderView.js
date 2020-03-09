@@ -82,7 +82,7 @@ export default class RootView extends React.Component {
         };
 
         return (
-            <div className="toolbar">
+            <div className="preorder-toolbar">
                 <ButtonGroup>
                     { primaryButton('all', 'All') }
                     { primaryButton('naturals', 'Naturals') }
@@ -192,16 +192,17 @@ export default class RootView extends React.Component {
                 media = this.state['all'].filter((item) => {
                     return selectedItems.get(item.name) != null;
                 });
+                break;
             default:
                 break;
         }
 
         return (
-            <div className="media">
+            <div className="preorder-table">
                 {
                     media.map((item, idx) => {
                         return (
-                            <div key={`row-${idx}`} className="media-row">
+                            <div key={`row-${idx}`} className="preorder-table-row">
                                 <div className="name">
                                     <div className="name-text">
                                         { item.name }
@@ -209,7 +210,7 @@ export default class RootView extends React.Component {
                                     <div className="name-checkbox">
                                         <input type="checkbox"
                                             checked={selectedItems.get(item.name) != null}
-                                            onClick={() => { this.onToggleSelection(item); }}
+                                            onChange={() => { this.onToggleSelection(item); }}
                                         />
                                     </div>
                                 </div>

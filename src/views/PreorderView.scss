@@ -2,31 +2,32 @@
     display: flex;
     flex-direction: column;
     margin: 1vw;
-    // height: 100%;
     width: 98vw;
+    height: 100vh;
+    overflow: hidden;
 
-    & > .toolbar {
-        // display: inline-flex;
+    & > .preorder-toolbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        // flex-shrink: 0;
+        flex-shrink: 0;
 
         & > .btn-group {
             margin: 4px;
         }
     }
 
-    & > .media {
+    & > .preorder-table {
         display: flex;
         flex-direction: column;
-        // flex-grow: 1;
-        // overflow-y: auto;
+        flex-grow: 1;
+        overflow-y: auto;
 
-        & > .media-row {
+        & > .preorder-table-row {
             display: flex;
             flex-direction: row;
             align-items: center;
+            min-height: min-content;
 
             & > .name {
                 display: flex;
@@ -54,7 +55,7 @@
 
 @media only screen and (max-width: 700px) {
   .preorder-view {
-      & > .toolbar {
+      & > .preorder-toolbar {
           justify-content: center;
           flex-wrap: wrap;
       }
