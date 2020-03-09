@@ -1,28 +1,41 @@
 .preorder-view {
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    height: 100%;
+    width: 98vw;
 
     & > .toolbar {
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         justify-content: space-between;
+        flex-shrink: 0;
 
         & > .btn-group {
-              margin: 4px;
+            margin: 4px;
         }
     }
 
     & > .media {
         display: flex;
         flex-direction: column;
-        overflow: scroll;
+        flex-grow: 1;
+        overflow-y: auto;
 
         & > .media-row {
             display: flex;
             flex-direction: row;
             align-items: center;
 
-            & > .title {
+            & > .name {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 width: 100px;
+
+                & > .name-text {
+                    text-align: center;
+                }
             }
 
             & > .gallery {

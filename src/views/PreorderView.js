@@ -22,6 +22,7 @@ export default class RootView extends React.Component {
         this.state = {
             selectedPrimary: 'all',
             selectedSecondary: 'all',
+            selectedItems: new Map(),
             maxImageWidth: imageWidthMaximum,
             all: Media,
             g10: Media.filter(_tagFilter('g10')),
@@ -62,7 +63,7 @@ export default class RootView extends React.Component {
             return (
                 <Button
                     variant={selectedPrimary === type ? 'primary' : 'secondary'}
-                    onClick={() => this.setState({ selectedPrimary: type })}
+                    onClick={() => this.setState({ selectedPrimary: type, selectedSecondary: 'all' })}
                 >
                 { text }
                 </Button>
@@ -84,9 +85,10 @@ export default class RootView extends React.Component {
             <div className="toolbar">
                 <ButtonGroup>
                     { primaryButton('all', 'All') }
-                    { primaryButton('wood', 'Wood') }
                     { primaryButton('naturals', 'Naturals') }
                     { primaryButton('synthetics', 'Synthetics') }
+                    { primaryButton('wood', 'Wood') }
+                    { primaryButton('selected', 'Selected') }
                 </ButtonGroup>
 
                 { selectedPrimary === 'synthetics' && (
@@ -148,10 +150,27 @@ export default class RootView extends React.Component {
         });
     }
 
+    onToggleSelection(item) {
+        const {
+            selectedItems,
+        } = this.state;
+
+        const newMap = new Map(selectedItems);
+
+        if (selectedItems.get(item.name) != null) {
+            newMap.delete(item.name);
+        } else {
+            newMap.set(item.name, true);
+        }
+
+        this.setState({ selectedItems: newMap });
+    }
+
     renderMedia() {
         const {
             selectedPrimary,
             selectedSecondary,
+            selectedItems,
         } = this.state;
 
         let media = null;
@@ -169,6 +188,10 @@ export default class RootView extends React.Component {
                     media = this.state[selectedSecondary];
                 }
                 break;
+            case 'selected':
+                media = this.state['all'].filter((item) => {
+                    return selectedItems.get(item.name) != null;
+                });
             default:
                 break;
         }
@@ -179,8 +202,16 @@ export default class RootView extends React.Component {
                     media.map((item, idx) => {
                         return (
                             <div key={`row-${idx}`} className="media-row">
-                                <div className="title">
-                                    { item.name }
+                                <div className="name">
+                                    <div className="name-text">
+                                        { item.name }
+                                    </div>
+                                    <div className="name-checkbox">
+                                        <input type="checkbox"
+                                            checked={selectedItems.get(item.name) != null}
+                                            onClick={() => { this.onToggleSelection(item); }}
+                                        />
+                                    </div>
                                 </div>
                                 <div className="gallery">
                                     { this.renderImages(item.images) }
@@ -195,7 +226,7 @@ export default class RootView extends React.Component {
 
     render() {
         return (
-            <div className="view preorder-view">
+            <div className="preorder-view">
                 { this.renderToolbar() }
                 { this.renderMedia() }
             </div>
