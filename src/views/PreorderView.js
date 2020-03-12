@@ -32,7 +32,7 @@ export default class RootView extends React.Component {
             wood: Media.filter(_tagFilter('wood')),
             pinecone: Media.filter(_tagFilter('pinecone')),
             dragonscale: Media.filter(_tagFilter('dragonscale')),
-            lizardskin: Media.filter(_tagFilter('lizardskin')),
+            raptorscale: Media.filter(_tagFilter('raptorscale')),
         };
     }
 
