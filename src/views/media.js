@@ -260,48 +260,48 @@ export const Media = [
         name: 'Amber Sea Dragon Scale',
         tags: ['synthetics', 'dragonscale'],
         images: [
-            { large: 'dragon-scale-amber-sea-1.jpg', small: 'dragon-scale-amber-sea-1-small.jpg' },
-            { large: 'dragon-scale-amber-sea-2.jpg', small: 'dragon-scale-amber-sea-2-small.jpg' },
+            { large: 'dragonscale-amber-sea-1.jpg', small: 'dragonscale-amber-sea-1-small.jpg' },
+            { large: 'dragonscale-amber-sea-2.jpg', small: 'dragonscale-amber-sea-2-small.jpg' },
         ]
     },
     {
         name: 'Arctic Dragon Scale',
         tags: ['synthetics', 'dragonscale'],
         images: [
-            { large: 'dragon-scale-arctic-1.jpg', small: 'dragon-scale-arctic-1-small.jpg' },
-            { large: 'dragon-scale-arctic-2.jpg', small: 'dragon-scale-arctic-2-small.jpg' },
+            { large: 'dragonscale-arctic-1.jpg', small: 'dragonscale-arctic-1-small.jpg' },
+            { large: 'dragonscale-arctic-2.jpg', small: 'dragonscale-arctic-2-small.jpg' },
         ]
     },
     {
         name: 'Borealis Dragon Scale',
         tags: ['synthetics', 'dragonscale'],
         images: [
-            { large: 'dragon-scale-borealis-1.jpg', small: 'dragon-scale-borealis-1-small.jpg' },
-            { large: 'dragon-scale-borealis-2.jpg', small: 'dragon-scale-borealis-2-small.jpg' },
+            { large: 'dragonscale-borealis-1.jpg', small: 'dragonscale-borealis-1-small.jpg' },
+            { large: 'dragonscale-borealis-2.jpg', small: 'dragonscale-borealis-2-small.jpg' },
         ]
     },
     {
         name: 'Mystic Dragon Scale',
         tags: ['synthetics', 'dragonscale'],
         images: [
-            { large: 'dragon-scale-mystic-1.jpg', small: 'dragon-scale-mystic-1-small.jpg' },
-            { large: 'dragon-scale-mystic-2.jpg', small: 'dragon-scale-mystic-2-small.jpg' },
+            { large: 'dragonscale-mystic-1.jpg', small: 'dragonscale-mystic-1-small.jpg' },
+            { large: 'dragonscale-mystic-2.jpg', small: 'dragonscale-mystic-2-small.jpg' },
         ]
     },
     {
         name: 'Ruby Frost Dragon Scale',
         tags: ['synthetics', 'dragonscale'],
         images: [
-            { large: 'dragon-scale-ruby-frost-1.jpg', small: 'dragon-scale-ruby-frost-1-small.jpg' },
-            { large: 'dragon-scale-ruby-frost-2.jpg', small: 'dragon-scale-ruby-frost-2-small.jpg' },
+            { large: 'dragonscale-ruby-frost-1.jpg', small: 'dragonscale-ruby-frost-1-small.jpg' },
+            { large: 'dragonscale-ruby-frost-2.jpg', small: 'dragonscale-ruby-frost-2-small.jpg' },
         ]
     },
     {
         name: 'Sunfire Dragon Scale',
         tags: ['synthetics', 'dragonscale'],
         images: [
-            { large: 'dragon-scale-sunfire-1.jpg', small: 'dragon-scale-sunfire-1-small.jpg' },
-            { large: 'dragon-scale-sunfire-2.jpg', small: 'dragon-scale-sunfire-2-small.jpg' },
+            { large: 'dragonscale-sunfire-1.jpg', small: 'dragonscale-sunfire-1-small.jpg' },
+            { large: 'dragonscale-sunfire-2.jpg', small: 'dragonscale-sunfire-2-small.jpg' },
         ]
     },
     {
@@ -482,42 +482,42 @@ export const Media = [
         ]
     },
     {
-        name: 'Blue and Black Lizard Skin',
-        tags: ['synthetics', 'lizardskin'],
+        name: 'Blue and Black Raptor Scale',
+        tags: ['synthetics', 'raptorscale'],
         images: [
-            { large: 'lizardskin-blue-and-black-1.jpg', small: 'lizardskin-blue-and-black-1-small.jpg' },
-            { large: 'lizardskin-blue-and-black-2.jpg', small: 'lizardskin-blue-and-black-2-small.jpg' },
+            { large: 'raptorscale-blue-and-black-1.jpg', small: 'raptorscale-blue-and-black-1-small.jpg' },
+            { large: 'raptorscale-blue-and-black-2.jpg', small: 'raptorscale-blue-and-black-2-small.jpg' },
         ]
     },
     {
-        name: 'Blue and White Lizard Skin',
-        tags: ['synthetics', 'lizardskin'],
+        name: 'Blue and White Raptor Scale',
+        tags: ['synthetics', 'raptorscale'],
         images: [
-            { large: 'lizardskin-blue-and-white-1.jpg', small: 'lizardskin-blue-and-white-1-small.jpg' },
+            { large: 'raptorscale-blue-and-white-1.jpg', small: 'raptorscale-blue-and-white-1-small.jpg' },
         ]
     },
     {
-        name: 'Green and Black Lizard Skin',
-        tags: ['synthetics', 'lizardskin'],
+        name: 'Green and Black Raptor Scale',
+        tags: ['synthetics', 'raptorscale'],
         images: [
-            { large: 'lizardskin-green-and-black-1.jpg', small: 'lizardskin-green-and-black-1-small.jpg' },
-            { large: 'lizardskin-green-and-black-2.jpg', small: 'lizardskin-green-and-black-2-small.jpg' },
+            { large: 'raptorscale-green-and-black-1.jpg', small: 'raptorscale-green-and-black-1-small.jpg' },
+            { large: 'raptorscale-green-and-black-2.jpg', small: 'raptorscale-green-and-black-2-small.jpg' },
         ]
     },
     {
-        name: 'Orange and Black Lizard Skin',
-        tags: ['synthetics', 'lizardskin'],
+        name: 'Orange and Black Raptor Scale',
+        tags: ['synthetics', 'raptorscale'],
         images: [
-            { large: 'lizardskin-orange-and-black-1.jpg', small: 'lizardskin-orange-and-black-1-small.jpg' },
-            { large: 'lizardskin-orange-and-black-2.jpg', small: 'lizardskin-orange-and-black-2-small.jpg' },
+            { large: 'raptorscale-orange-and-black-1.jpg', small: 'raptorscale-orange-and-black-1-small.jpg' },
+            { large: 'raptorscale-orange-and-black-2.jpg', small: 'raptorscale-orange-and-black-2-small.jpg' },
         ]
     },
     {
-        name: 'Red and Black Lizard Skin',
-        tags: ['synthetics', 'lizardskin'],
+        name: 'Red and Black Raptor Scale',
+        tags: ['synthetics', 'raptorscale'],
         images: [
-            { large: 'lizardskin-red-and-black-1.jpg', small: 'lizardskin-red-and-black-1-small.jpg' },
-            { large: 'lizardskin-red-and-black-2.jpg', small: 'lizardskin-red-and-black-2-small.jpg' },
+            { large: 'raptorscale-red-and-black-1.jpg', small: 'raptorscale-red-and-black-1-small.jpg' },
+            { large: 'raptorscale-red-and-black-2.jpg', small: 'raptorscale-red-and-black-2-small.jpg' },
         ]
     },
     {

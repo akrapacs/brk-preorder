@@ -97,7 +97,7 @@ export default class RootView extends React.Component {
                         { secondaryButton('g10', 'G-10') }
                         { secondaryButton('micarta', 'Micarta') }
                         { secondaryButton('dragonscale', 'Dragon Scale') }
-                        { secondaryButton('lizardskin', 'Lizard Skin') }
+                        { secondaryButton('raptorscale', 'Raptor Scale') }
                     </ButtonGroup>
                 )}
 
