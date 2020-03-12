@@ -33,6 +33,7 @@ export default class RootView extends React.Component {
             pinecone: Media.filter(_tagFilter('pinecone')),
             dragonscale: Media.filter(_tagFilter('dragonscale')),
             raptorscale: Media.filter(_tagFilter('raptorscale')),
+            bone: Media.filter(_tagFilter('bone')),
         };
     }
 
@@ -104,6 +105,7 @@ export default class RootView extends React.Component {
                 { selectedPrimary === 'naturals' && (
                     <ButtonGroup>
                         { secondaryButton('all', 'All') }
+                        { secondaryButton('bone', 'Bone') }
                         { secondaryButton('pinecone', 'Pinecone') }
                     </ButtonGroup>
                 )}

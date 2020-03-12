@@ -1,10 +1,19 @@
 export const Media = [
     {
         name: 'Antique Stag Bone',
-        tags: ['naturals'],
+        tags: ['naturals', 'bone'],
         images: [
             { large: 'antique-stag-bone-1.jpg', small: 'antique-stag-bone-1-small.jpg' },
             { large: 'antique-stag-bone-2.jpg', small: 'antique-stag-bone-2-small.jpg' },
+        ]
+    },
+    {
+        name: 'Camel Bone',
+        tags: ['naturals', 'bone'],
+        images: [
+            { large: 'camel-bone-1.jpg', small: 'camel-bone-1-small.jpg' },
+            { large: 'camel-bone-2.jpg', small: 'camel-bone-2-small.jpg' },
+            { large: 'camel-bone-3.jpg', small: 'camel-bone-3-small.jpg' },
         ]
     },
     {
@@ -419,7 +428,7 @@ export const Media = [
     },
     {
         name: 'Impala',
-        tags: ['naturals'],
+        tags: ['naturals', 'bone'],
         images: [
             { large: 'impala-1.jpg', small: 'impala-1-small.jpg' },
             { large: 'impala-2.jpg', small: 'impala-2-small.jpg' },
@@ -610,7 +619,7 @@ export const Media = [
     },
     {
         name: 'Rough Out Buffalo',
-        tags: ['naturals'],
+        tags: ['naturals', 'bone'],
         images: [
             { large: 'rough-out-buffalo-1.jpg', small: 'rough-out-buffalo-1-small.jpg' },
             { large: 'rough-out-buffalo-2.jpg', small: 'rough-out-buffalo-2-small.jpg' },
@@ -618,7 +627,7 @@ export const Media = [
     },
     {
         name: 'Smooth Bone',
-        tags: ['naturals'],
+        tags: ['naturals', 'bone'],
         images: [
             { large: 'smooth-bone-1.jpg', small: 'smooth-bone-1-small.jpg' },
             { large: 'smooth-bone-2.jpg', small: 'smooth-bone-2-small.jpg' },
